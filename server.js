@@ -72,6 +72,6 @@ let transporter = nodemailer.createTransport({
 
 });
   
-app.listen(4900,function(){
+app.listen(process.env.PORT || 3981,function(){
     console.log("server running");
 });
