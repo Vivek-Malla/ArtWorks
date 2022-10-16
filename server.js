@@ -42,7 +42,7 @@ app.post("/access",function(req,res){
     res.sendFile(__dirname+"/shop.html");
    }
    else{
-    res.send("<h1>fail</h1>");
+    res.send("<h1>Incorrect Login Details Please Check</h1>");
    }
 });
 
@@ -63,8 +63,8 @@ let transporter = nodemailer.createTransport({
   let info = transporter.sendMail({
     from: 'vivekmalla123@gmail.com',
     to: emailq,
-    subject: 'Order Placed',
-    text: addq
+    subject: 'Order Placed Successfully',
+    text: "PLease check with your address Address:"+addq+" If any Changes mail to the support@rishi.com. Dear"+emailq+", Thank you for giving us your trust! We have just confirmed you received your order, and hope you are enjoying your Paintings. Every item is handmade by our team, with care to the details, so we can always provide you with the best experience."
   })
 
     res.sendFile(__dirname+"/support.html");
