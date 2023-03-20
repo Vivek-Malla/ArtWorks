@@ -38,7 +38,7 @@ app.post("/access",function(req,res){
    var email = req.body.email;
    var password = req.body.pwd;
 
-   if(name == "Rishi" && email == "rishi@gmail.com" && password == "Rishi"){
+   if(name == "Madhuri" && email == "Madhuri@gmail.com" && password == "Madhuri"){
     res.sendFile(__dirname+"/shop.html");
    }
    else{
@@ -57,7 +57,7 @@ let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: 'vivekmalla123@gmail.com',
-      pass: 'nztvmttogtgpjvno'
+      pass: 'tgkehndhtagxvmlk'
     }
   })
   let info = transporter.sendMail({
